@@ -7,7 +7,7 @@
     <title>Midterm Project</title>
 </head>
 <body>
-    <heading>
+    <header>
         <h1>Lone Starfish</h1>
         <img src="lone-starfish-wide" alt="Starfish Banner">
         <ul>
@@ -15,7 +15,7 @@
             <li>Storie</li>
             <li>Contact</li>
         </ul>
-    </heading>
+    </header>
     <main>
         <section>
         <h2>Life of a Satrfish</h2>
@@ -35,9 +35,38 @@
         <section>
             <h3>Contact to learn more</h3>
             <article>
-                
+                <form action="newpage.html" method="get">
+                    <div>
+                        <label for="fullname">Your Name</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </div>
+                    <div>
+                        <label for="email">Your Email</label>
+                        <textarea id="email" name="email"></textarea>
+                    </div>
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div>
+                        <label for="visit">Would you like to visit the starfish?</label>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" id="Yes" name="visit" value="0-1">
+        
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="visit" value="2-5">
+        
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="visit" value="5+">
+                    </div>
+                    <div>
+                        <button type="submit">Start</button>
+                    </div>   
             </article>
         </section>
     </main>
+    <footer>
+       <p>© Lone Starfish</p> 
+    </footer>
 </body>
 </html>
