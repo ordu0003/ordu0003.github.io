@@ -6,36 +6,60 @@ body {
 
 header {
     margin: 0;
+    margin: 0 auto;
+    width: 1080px;
 }
 
-h1{
+.tittle{
     z-index: 2;
     color: white;
     position: absolute;
-    overflow: auto;
+    padding: 200px 0 0 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .banner {
     z-index: -1;
 }
 
-.wrapper {
-    width: 1080px;
-    margin: 100px auto 0 auto;    
-}
-
 nav ul {
-    padding-left: 0;
+    padding: 5px 0;
     list-style-type: none;
+    box-sizing: border-box;
 }
 
 nav li {
     display: inline-block;
+    width: 345px;
+    align-content: center;
+    border-right: 1px solid black;
+    box-sizing: border-box;
 }
 
 nav li a {
-    padding: 10px;
-    color: white;
+    padding: 5px;
+}
+
+nav li::before {
+    content: none;
+}
+
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1080px;
+    margin: 25px auto auto auto;    
+}
+
+.facts {
+    margin: auto;
+}
+h2 {
+    margin: 5px;
 }
 
 .clearfix::after {
@@ -45,7 +69,26 @@ nav li a {
 }
 
 .photo {
-    width: 180px;
+    width: 190px;
+    float: left;
+    margin: 5px;
+}
+
+.paragraph {
+    width: 1040px;
+    margin: 5px;
+}
+
+.box {
+    border: 1px solid black;
+    width: 1060ox;
+    height: auto;
+    margin: 5px;
+    padding: 20px;
+}
+
+footer {
     float: left;
     margin: 10;
+    text-align: left;
 }
