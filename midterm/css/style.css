@@ -4,13 +4,19 @@ body {
     margin: 0;
 }
 
+header {
+    margin: 0;
+}
+
 h1{
     z-index: 2;
     color: white;
+    position: absolute;
+    overflow: auto;
 }
 
 .banner {
-    position: absolute;
+    z-index: -1;
 }
 
 .wrapper {
@@ -29,5 +35,17 @@ nav li {
 
 nav li a {
     padding: 10px;
-    background-color: white;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.photo {
+    width: 180px;
+    float: left;
+    margin: 10;
 }
