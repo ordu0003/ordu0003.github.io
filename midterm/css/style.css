@@ -33,12 +33,20 @@ nav li {
     display: inline-block;
     width: 345px;
     align-content: center;
-    border-right: 1px solid black;
     box-sizing: border-box;
+}
+
+nav li:nth-child(1) {
+    border-right: 1px solid black;
+}
+
+nav li:nth-child(2) {
+    border-right: 1px solid black;
 }
 
 nav li a {
     padding: 5px;
+    align-content: center;
 }
 
 nav li::before {
@@ -85,6 +93,22 @@ h2 {
     height: auto;
     margin: 5px;
     padding: 20px;
+}
+
+form div {
+    margin: 20px 0px;
+}
+
+#start button {
+    background-color: #aad4cf;
+    border: 1px solid black;
+    color: black;
+    margin: 10px 0px;
+    padding: 5px;
+}
+
+input div {
+    width: 1050px;
 }
 
 footer {
