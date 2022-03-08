@@ -1,3 +1,19 @@
 body {
     background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+nav li {
+    display: inline-block;
+    /*width: 33.3%*/
+}
+
+nav li a {
+    padding: 10px;
+    background-color: white;
 }
