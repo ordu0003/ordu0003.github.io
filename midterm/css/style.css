@@ -14,9 +14,11 @@ header {
     z-index: 2;
     color: white;
     position: absolute;
-    padding: 200px 0 0 0;
+    padding: 200px 0 0 400px;
     box-sizing: border-box;
     text-align: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -34,6 +36,7 @@ nav li {
     width: 345px;
     align-content: center;
     box-sizing: border-box;
+    padding: 0px 150px;
 }
 
 nav li:nth-child(1) {
@@ -52,7 +55,6 @@ nav li a {
 nav li::before {
     content: none;
 }
-
 a:link, a:visited {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -89,14 +91,19 @@ h2 {
 
 .box {
     border: 1px solid black;
-    width: 1060ox;
+    width: 1040px;
     height: auto;
     margin: 5px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 form div {
     margin: 20px 0px;
+}
+
+input div {
+    width: 100%;
 }
 
 #start button {
@@ -107,12 +114,7 @@ form div {
     padding: 5px;
 }
 
-input div {
-    width: 1050px;
-}
-
 footer {
-    float: left;
+    float: right;
     margin: 10;
-    text-align: left;
 }
