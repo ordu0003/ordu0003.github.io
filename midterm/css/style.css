@@ -4,9 +4,10 @@ body {
     margin: 0;
 }
 
+/*heading section*/
 header {
     width: 50%;
-    margin: auto;    
+    margin: 0 auto;    
 }
 
 .tittle {
@@ -22,6 +23,7 @@ header {
     margin: 0;
 }
 
+/*Main section*/
 .wrapper {
     width: 50%;
     margin: 0% auto auto auto;    
@@ -29,6 +31,8 @@ header {
     box-sizing: border-box;
     padding: 1%;
 }
+
+/*Navigation bar*/
 
 nav {
     box-sizing: border-box;
@@ -60,9 +64,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-.facts {
-    margin: auto;
-}
+/*Section with photo*/
 
 h2 {
     margin: 5px;
@@ -72,7 +74,7 @@ h2 {
     content: "";
     display: block;
     clear: both;
-}
+} /*Applied for the float used below*/
 
 .photo {
     width: 25%;
@@ -87,6 +89,12 @@ h2 {
     margin-top: 0;
 }
 
+/*Section facts */
+.facts {
+    margin: auto;
+}
+
+/*Form section*/
 .box {
     border: 1px solid black;
     width: 96%;
@@ -103,19 +111,19 @@ form div {
     align-content: center;
     margin-bottom: 10px;
 }
-
+  /*style for form conatiners*/
 input[id=fullname] {
-    width: 95%;
+    width: 96%;
     height: 25px;
 }
 
 input[id=email] {
-    width: 95%;
+    width: 96%;
     height: 25px;
 }
 
 input[id=message] {
-    width: 95%;
+    width: 96%;
     height: 100px;
     text-decoration: none;
 }
@@ -129,8 +137,8 @@ input[id=message] {
     box-sizing: border-box;
 }
 
-
+/*Style for footer*/
 footer {
     text-align: right;
-    margin:0;
+    margin:0 3% 0 0;
 }
