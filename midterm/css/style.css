@@ -5,38 +5,42 @@ body {
 }
 
 header {
-    margin: 0;
-    margin: 0 auto;
-    width: 1080px;
+    width: 50%;
+    margin: auto;    
 }
 
-.tittle{
-    z-index: 2;
+.tittle {
     color: white;
     position: absolute;
-    padding: 200px 0 0 400px;
     box-sizing: border-box;
-    text-align: center;
-    align-items: center;
-    box-sizing: border-box;
+    padding-left: 18%;
+    padding-top: 8%;
 }
 
 .banner {
-    z-index: -1;
+    width: 100%;
+    margin: 0;
 }
 
-nav ul {
-    padding: 5px 0;
-    list-style-type: none;
+.wrapper {
+    width: 50%;
+    margin: 0% auto auto auto;    
+    background-color: rgb(250, 250, 250, 0.5);
     box-sizing: border-box;
+    padding: 1%;
+}
+
+nav {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
 }
 
 nav li {
     display: inline-block;
-    width: 345px;
-    align-content: center;
     box-sizing: border-box;
-    padding: 0px 150px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 nav li:nth-child(1) {
@@ -48,26 +52,18 @@ nav li:nth-child(2) {
 }
 
 nav li a {
-    padding: 5px;
     align-content: center;
 }
 
-nav li::before {
-    content: none;
-}
 a:link, a:visited {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
-.wrapper {
-    width: 1080px;
-    margin: 25px auto auto auto;    
-}
-
 .facts {
     margin: auto;
 }
+
 h2 {
     margin: 5px;
 }
@@ -79,42 +75,62 @@ h2 {
 }
 
 .photo {
-    width: 190px;
+    width: 25%;
+    height: auto;
     float: left;
     margin: 5px;
 }
 
 .paragraph {
-    width: 1040px;
-    margin: 5px;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 0;
 }
 
 .box {
     border: 1px solid black;
-    width: 1040px;
+    width: 96%;
     height: auto;
-    margin: 5px;
-    padding: 20px;
+    margin-bottom: 1%;
+    padding: 10px;
     box-sizing: border-box;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 form div {
-    margin: 20px 0px;
+    margin-top: 10px;
+    align-content: center;
+    margin-bottom: 10px;
 }
 
-input div {
-    width: 100%;
+input[id=fullname] {
+    width: 95%;
+    height: 25px;
 }
 
-#start button {
-    background-color: #aad4cf;
+input[id=email] {
+    width: 95%;
+    height: 25px;
+}
+
+input[id=message] {
+    width: 95%;
+    height: 100px;
+    text-decoration: none;
+}
+
+#send button {
+    background-color: transparent;
     border: 1px solid black;
     color: black;
-    margin: 10px 0px;
+    margin: 1%;
     padding: 5px;
+    box-sizing: border-box;
 }
 
+
 footer {
-    float: right;
-    margin: 10;
+    text-align: right;
+    margin:0;
 }
