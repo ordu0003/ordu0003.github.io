@@ -1,41 +1,57 @@
-html {
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #222;
+* {
+    box-sizing: border-box;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+body {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    width: 600px;
+    margin: auto;
+    align-content: center;
+}
+
+.wrapper-bleed {
+    width: 600px;
+    margin: auto;
+    align-content: center;
 }
 
 header {
-    margin: 10px;
+    margin: auto;
     width: 600px;
-    box-sizing: border-box;   
+    background-color: #222;
+    align-content: center;
 }
 
 .logo {
-    width: 100%;
+    width: 95%;
     background-color: #c78c06;
+    margin: auto;
 }
 
 nav {
-    box-sizing: border-box;
     width: 100%;
     height:auto;
+    text-align: center;
 }
 
 nav li {
-    box-sizing: border-box;
     padding: 10px;
     width: 100%;
     margin: 0;
 }
+ 
+a {
+    width: 600px;
+    margin: auto;
+}
 
 nav li a {
-    align-content: center;
     color: #c78c06;
+    width: 100%;
 }
 
 nav li:hover {
@@ -51,12 +67,89 @@ a:link, a:visited {
 }
 
 .searchbar {
-    width: 100%;
+    width: 600px;
+    margin:auto;
+    align-items: center;
 }
 
-.wrapper {
+button {
+    border: #c78c06 solid 1px;
+    background-color: #222;
+    width: 30px;
+    height: 30px;
+}
+
+button i {
+  color: #c78c06;
+  padding: 2px;
+  margin-left: 0;
+}
+
+form {
     width: 600px;
-    margin: 0 auto auto auto;
-    align-content: center;
-    display: inline-block;
+    align-self: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+} 
+
+.banner {
+    margin: auto;
+    background-image: url("../images/main-banner.jpg");
+    background-position: center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+
+.bannerbg {
+    background-color: #2229;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    align-content: space-around;
+    padding: 2rem;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.bannerbg p {
+    color: white;
+}
+
+.button1 {
+    background-color: #c78c06;
+    color: #222;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.button1 i {
+    padding-left: 10px;
+}
+
+.about {
+    background-color: #ffe6ac;
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 1rem;
 }
