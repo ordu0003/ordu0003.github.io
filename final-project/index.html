@@ -34,7 +34,7 @@
                 </ul>
             </nav>
             <div class="searchbar">
-                <form>
+                <form id="bar">
                     <input type="text" placeholder="Search" name="search">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
@@ -42,24 +42,23 @@
         </div>
     </header>
     <main>
+        <div class="wrapper">
 
-        <!-- Welcome section with banner full screen size-->
-        <section class="banner">
-            <div class="bannerbg">
-                <h1>Welcome to Three Star Media</h1> <br>
-                <p class="bannertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum fuga corrupti
-                    molestiae perspiciatis iure voluptates iste cupiditate? Eius veritatis corrupti consequuntur!
-                </p> <br>
-                <br>
-                <br>
-                <a class="button1" href="#">Connect with us<i class="fa-solid fa-caret-right"></i></a>
-                <br>
-            </div>
-        </section>
+            <!-- Welcome section with banner full screen size-->
+            <section class="banner">
+                <div class="bannerbg">
+                    <h1>Welcome to Three Star Media</h1> <br>
+                    <p class="bannertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum fuga corrupti
+                        molestiae perspiciatis iure voluptates iste cupiditate? Eius veritatis corrupti consequuntur!
+                    </p> <br>
+                    <a class="button1" href="#">Connect with us<i class="fa-solid fa-caret-right"></i></a>
+                </div>
+            </section>
 
-        <!-- About section full screen size-->
-        <section class="about">
+            <!-- About section full screen size-->
             <div class="wrapper">
+            </div>
+            <section class="about">
                 <img src="images/about-us.jpg" alt="About us">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum corporis,
@@ -69,9 +68,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum corporis,
                     incidunt tempora fugiat assumenda quibusdam?</p>
                 <br>
-            </div>
-        </section>
+            </section>
+        </div>
         <br>
+
 
         <!--Grid of Services with bleed-->
         <section class="services">
@@ -99,8 +99,8 @@
             </div>
             <!--Service 2-->
             <div class="wrapper">
-                    <img src="images/video.jpg" alt="Video">
-                    <div class="video"><br>
+                <img src="images/video.jpg" alt="Video">
+                <div class="video"><br>
                     <h3>Video Production</h3><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum corporis,
                         incidunt tempora fugiat assumenda quibusdam, aliquid laborum rem cumque maiores id itaque iusto
@@ -110,8 +110,8 @@
             </div>
             <!--Service 3-->
             <div class="wrapper">
-                    <img src="images/web.jpg" alt="Web">
-                    <div class="web"><br>
+                <img src="images/web.jpg" alt="Web">
+                <div class="web"><br>
                     <h3>Web Development</h3><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum corporis,
                         incidunt tempora fugiat assumenda quibusdam, aliquid laborum rem cumque maiores id itaque iusto
@@ -121,19 +121,20 @@
             </div>
             <!--Service 4-->
             <div class="wrapper">
-                    <img src="images/print.jpg" alt="Print">
-                    <div class="print"><br>
+                <img src="images/print.jpg" alt="Print">
+                <div class="print"><br>
                     <h3>Print</h3><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum corporis,
                         incidunt tempora fugiat assumenda quibusdam, aliquid laborum rem cumque maiores id itaque iusto
                         repellat facilis libero officia.</p><br>
-                        <p><a class="button2" href="#">Print Plans<i class="fa-solid fa-caret-right"></i></a></p>
+                    <p><a class="button2" href="#">Print Plans<i class="fa-solid fa-caret-right"></i></a></p>
                 </div>
             </div>
         </section>
+        </div>
         <!--Linked Vision banner full screen size-->
         <section class="vision">
-            <div class="wrapper-bleed">
+            <div class="vision-wrapper">
                 <h2>Our Vision</h2><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime natus ex amet commodi laborum error
                     qui odio necessitatibus magni aut molestias a tempora aliquid enim corporis quia molestiae, dolor
@@ -142,80 +143,87 @@
                 <br>
             </div>
         </section>
-        <!--Team intro section with bleed-->
-        <section class="team">
-            <div class="wrapper">
-                <h2>Our Team</h2>
-                <div class="member-1">
+        <div class="wrapper-bleed">
+            <!--Team intro section with bleed-->
+            <section class="team">
+                <div class="wrapper">
+                    <h2>Our Team</h2>
                     <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quos placeat necessitatibus aut
-                        id magni ea similique eos modi labore totam animi distinctio culpa perspiciatis assumenda
-                        reprehenderit reiciendis, minus dolorum.</p>
-                </div>
-                <div class="member-2">
+                    <div class="member">
+                        <h2>John Doe</h2>
+                        <h3>CEO and Co-owner</h3>
+                        <hr>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quos placeat necessitatibus
+                            aut
+                            id magni ea similique eos modi labore totam animi distinctio culpa perspiciatis assumenda
+                            reprehenderit reiciendis, minus dolorum.</p>
+                    </div>
                     <img src="images/bob.jpg" alt="John Doe">
-                    <h3>Bob Rite</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quos placeat necessitatibus aut
-                        id magni ea similique eos modi labore totam animi distinctio culpa perspiciatis assumenda
-                        reprehenderit reiciendis, minus dolorum.</p>
+                    <div class="member">
+                        <h2>Bob Rite</h2>
+                        <h3>CEO and Co-owner</h3>
+                        <hr>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quos placeat necessitatibus
+                            aut
+                            id magni ea similique eos modi labore totam animi distinctio culpa perspiciatis assumenda
+                            reprehenderit reiciendis, minus dolorum.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!--Contact form section with bleed-->
-        <section class="contact">
-            <div class="wrapper">
-                <h2>Contact Us</h2>
-                <div class="message">
-                    <h3>Send us a message</h3>
-                    <form action="#" method="get">
-                        <div>
-                            <label for="fullname">Full Name</label>
-                            <br>
-                            <input type="text" id="fullname" name="fullname">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <br>
-                            <input type="text" id="email" name="email">
-                        </div>
-                        <div>
-                            <label for="message">Message</label>
-                            <br>
-                            <input type="text" id="message" name="message">
-                        </div>
-                        <div id="send">
-                            <button type="submit">Send</button>
-                        </div>
-                    </form>
+            </section>
+            <!--Contact form section with bleed-->
+            <section class="contact">
+                <div class="wrapper">
+                    <h2>Contact Us</h2>
+                    <div class="message">
+                        <h3>Send us a message</h3>
+                        <form id="contactform" action="#" method="get">
+                            <div>
+                                <label for="fullname">Full Name</label>
+                                <br>
+                                <input type="text" id="fullname" name="fullname">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <br>
+                                <input type="text" id="email" name="email">
+                            </div>
+                            <div>
+                                <label for="message">Message</label>
+                                <br>
+                                <input type="text" id="message" name="message">
+                            </div>
+                            <div id="send">
+                                <button id="send" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <!--Office schedule-->
-                <div class="chart">
-                    <table>
-                        <caption>Hours of operation</caption>
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday-Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday-Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="wrapper">
+                    <div class="chart">
+                        <table>
+                                <h3>Hours of operation </h3>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday-Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday-Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <!--Office location-->
+                <div class="wrapper">
                 <div class="map">
                     <h2>Location</h2>
                     <iframe
@@ -224,15 +232,14 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </section>
-        <!--Copyright full screen size-->
-        <footer>
-            <div class="wrapper">
-                <p>© Copyright Three Star Media, 2021</p>
-                <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
-            </div>
-        </footer>
+            </section>
+        </div>
     </main>
+    <!--Copyright full screen size-->
+    <footer>
+            <p>© Copyright Three Star Media, 2021</p>
+            <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+    </footer>
 </body>
 
 </html>
