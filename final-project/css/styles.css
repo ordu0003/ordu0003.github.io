@@ -109,6 +109,11 @@ button i {
     clear: both;
 } 
 
+main {
+    margin: auto;
+    height: 7180px;
+}
+
 .banner {
     width: 100%;
     margin: auto;
@@ -160,7 +165,7 @@ h1 {
 }
 
 .about img {
-    width: 95%;
+    width: 100%;
     z-index: 2;
     margin-top: 1rem;
 }
@@ -363,11 +368,11 @@ td, th {
     padding: 1rem 0 1rem 1rem;
 }
 
-tr:nth-child(1) {
+thead {
     background-color: #ffe6ac;
 }
 
-#send {
+.send button {
     color: #c78c06;
     font-weight: 700;
     font-size: 1rem;
@@ -382,7 +387,8 @@ footer {
     background-color: #222;
     color: #c78c06;
     width: 100%;
-    padding-left: 4rem;
+    padding: 1rem 4rem;
+    margin: auto;
 }
 
 footer a:link, a:visited {
