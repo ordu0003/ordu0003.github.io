@@ -52,6 +52,7 @@ a {
 nav li a {
     color: #c78c06;
     width: 100%;
+    font-weight: 600;
 }
 
 nav li:hover {
@@ -81,13 +82,22 @@ button {
 
 button i {
   color: #c78c06;
-  padding: 2px;
   margin-left: 0;
 }
 
 form {
     width: 600px;
     align-self: center;
+}
+
+input {
+    width: 92%;
+    height: 30px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0;
+    
 }
 
 .clearfix::after {
@@ -100,17 +110,23 @@ form {
     margin: auto;
     background-image: url("../images/main-banner.jpg");
     background-position: center;
-    background-size: 600px;
+    background-size: cover;
+    width: 600px;
+    height: 450px;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .bannerbg {
     background-color: #2229;
     width: 600px;
-    height: 400px;
-    margin: auto;
+    height: 320px;
     align-content: space-around;
-    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    z-index: 1;
+    float: left;
+    padding: 1rem;
 }
 
 h1 {
@@ -127,7 +143,6 @@ h1 {
     background-color: #c78c06;
     color: #222;
     padding: 20px;
-    margin-top: 10px;
 }
 
 .button1 i {
@@ -138,18 +153,125 @@ h1 {
     background-color: #ffe6ac;
     width: 600px;
     margin: auto;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.about img {
+    width:570px;
 }
 
 h2 {
     font-weight: bold;
     font-size: 2rem;
+    margin: 0.5rem;
 }
 
 p {
-    font-size: 20px;
-    margin: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.services img {
+    width: 600px;
 }
 
 h3 {
     font-size: 1rem;
+    font-weight: bold;
+}
+
+.digital {
+    background-color: #ffe6ac;
+    margin: 0;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.digital h3, p {
+    padding-left: 1rem; 
+}
+
+.button2 {
+    background-color: #222;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p .button2 {
+    padding: 10px;
+}
+
+.button2 i {
+    padding-left: 10px;
+}
+
+.marketing {
+    background-color: #ffe6ac;
+    margin: 0;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.marketing h3, p {
+    padding-left: 1rem; 
+}
+
+.video {
+    background-color: #ffe6ac;
+    margin: 0;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.video h3, p {
+    padding-left: 1rem; 
+}
+
+.web {
+    background-color: #ffe6ac;
+    margin: 0;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.web h3, p {
+    padding-left: 1rem; 
+}
+
+.print {
+    background-color: #ffe6ac;
+    margin: 0;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.print h3, p {
+    padding-left: 1rem; 
+}
+
+.vision {
+    margin: 1rem 0;
+    background-image: url("../images/vision.jpg");
+    background-size: cover;
+    width: 100%;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.button3 {
+    background-color: #2229;
+    border: #c78c06 solid 1px;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.button3 i {
+    padding-left: 10px;
 }
