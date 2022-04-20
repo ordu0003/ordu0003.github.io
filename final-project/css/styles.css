@@ -296,7 +296,12 @@ h3 {
     padding-left: 0.5rem;
 }
 
-.member {
+.member1 {
+    background-color: #ffe6ac;
+    height: 225px;
+    margin-bottom: 1rem;
+}
+.member2 {
     background-color: #ffe6ac;
     height: 225px;
     margin-bottom: 1rem;
@@ -310,7 +315,11 @@ hr{
     margin-bottom: 1rem;
 }
 
-.member h3 {
+.member1 h3 {
+    padding-left: 1rem;
+}
+
+.member2 h3 {
     padding-left: 1rem;
 }
 
@@ -435,11 +444,18 @@ footer a:link, a:visited {
         margin: auto;
         height: auto;
         max-width: 1200px;
-    }  
-    
-    .vision-wrapper {
+    }
+
+    .wrapper-bleed {
         width: 100%;
         margin: auto;
+        height: auto;
+        max-width: 1200px;
+    }  
+
+    main {
+        margin: auto;
+        height: 3500px;
     }
 
     .banner {
@@ -460,16 +476,70 @@ footer a:link, a:visited {
 
     .services {
         display: grid;
-        grid-template-columns: 6fr 3fr;
+        grid-template-columns: (repeat(6, 1fr));
+        grid-template-rows: (repeat(4, 1fr));
         grid-template-areas:
-        "header header"
-        "nav socials"
-        "main main"
-        "aside aside"
-        "footer footer";
+        "h2 h2 h2 h2 h2 h2"
+        "digital digital digital marketing marketing marketing"
+        "video video web web print print";
     }
 
     .digital { grid-area: digital; }
     .marketing { grid-area: marketing; }
+    .video { grid-area: video; }
+    .web { grid-area: web; }
+    .print { grid-area: print; }
+    .section h2 { grid-area: h2; }
+
+    .vision{
+        width: 100%;
+
+    }
+
+    .vision-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    .team {
+        height: 700px;
+    }
+
+    .team img {
+        float: left;
+        width: 50%;
+    }
+
+    .team img:nth-child(2) {
+        float: right;
+        width: 50%;
+    }
+
+    .member1 {
+        width: 50%;
+        height: 312px;
+        float: right;
+        margin-bottom: 0;
+    }
+
+    .member2 {
+        width: 50%;
+        height: 312px;
+        float: left;
+    }
+
+    .message {
+        float: left;
+        width: 50%;
+    }
+
+    .map {
+        float: right;
+        width: 50%;
+    }
+
+    .chart {
+        float: end;
+    }
 
 }
