@@ -395,11 +395,81 @@ footer a:link, a:visited {
     text-decoration: none;
 }
 
-@media screen and (min-width: 760px) and (max-width:1200px) {
-    .wrapper {
-        width: 1200px;
+@media screen and (min-width: 760px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    header {
         margin: auto;
-        align-content: center;
+        width: 100%;
+        max-width: 1200px;
+        justify-content:space-between;
+    }
+
+    .logo {
+        display: flex;
+        background-color: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav {
+        height:auto;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .searchbar {
+        margin:auto;
+        align-items: center;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: auto;
         height: auto;
-    }    
+        max-width: 1200px;
+    }  
+    
+    .vision-wrapper {
+        width: 100%;
+        margin: auto;
+    }
+
+    .banner {
+        max-width: 1200px;
+    }
+
+    .bannerbg {
+        background-color: #2229;
+        width: 85%;
+        margin-left: 5rem;
+    }
+
+    .about img {
+        float: left;
+        width: 50%;
+        margin-right: 0.5rem;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 6fr 3fr;
+        grid-template-areas:
+        "header header"
+        "nav socials"
+        "main main"
+        "aside aside"
+        "footer footer";
+    }
+
+    .digital { grid-area: digital; }
+    .marketing { grid-area: marketing; }
+
 }
