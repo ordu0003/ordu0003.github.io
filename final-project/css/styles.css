@@ -168,6 +168,7 @@ h1 {
     width: 100%;
     z-index: 2;
     margin-top: 1rem;
+    height: auto;
 }
 
 h2 {
@@ -183,12 +184,19 @@ p {
     padding-left: 1rem;
 }
 
+.serviceswrapper {
+    width: 600px;
+    margin: auto;
+    align-content: center;
+    height: auto;
+}
+
 .services img {
     width: 100%;
 }
 
 .services h2 {
-    padding: 1rem 0;
+    margin-left: 2rem;
 }
 
 h3 {
@@ -414,19 +422,27 @@ footer a:link, a:visited {
         margin: auto;
         width: 100%;
         max-width: 1200px;
-        justify-content:space-between;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
     }
 
     .logo {
-        display: flex;
-        background-color: none;
+        width: 12%;
         margin: 0;
         padding: 0;
+        background-color: #222;
     }
     
     nav {
         height:auto;
         text-align: center;
+        margin-left: 2rem;
     }
 
     nav ul {
@@ -434,9 +450,17 @@ footer a:link, a:visited {
         justify-content: space-between;
     }
 
+    nav li {
+        font-size: 0.75rem;
+    }
+
     .searchbar {
-        margin:auto;
-        align-items: center;
+        width: 50px;
+    }
+
+    #bar {
+        width: 80%;
+        margin: 0;  
     }
 
     .wrapper {
@@ -458,38 +482,63 @@ footer a:link, a:visited {
         height: 3500px;
     }
 
+    p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
     .banner {
         max-width: 1200px;
+        margin: auto;
     }
 
     .bannerbg {
         background-color: #2229;
-        width: 85%;
-        margin-left: 5rem;
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .about {
+        padding-left: 2rem;
+        height:max-content;
     }
 
     .about img {
         float: left;
         width: 50%;
         margin-right: 0.5rem;
+        max-height: 218px;
     }
 
     .services {
+        width: 80%;
+        height: fit-content;
         display: grid;
-        grid-template-columns: (repeat(6, 1fr));
-        grid-template-rows: (repeat(4, 1fr));
+        justify-content: space-around;
+        margin: 0;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-        "h2 h2 h2 h2 h2 h2"
-        "digital digital digital marketing marketing marketing"
-        "video video web web print print";
+        "box1 box1 box1 box1 box1 box1"
+        "box2 box2 box2 box2 box2 box2";
+        grid-gap: 0.5rem;
     }
 
-    .digital { grid-area: digital; }
-    .marketing { grid-area: marketing; }
-    .video { grid-area: video; }
-    .web { grid-area: web; }
-    .print { grid-area: print; }
-    .section h2 { grid-area: h2; }
+    .services h2 {
+        position: absolute;
+        margin-left: 2rem;
+    }
+
+    .serviceswrapper {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        max-width: 1200px;
+    }
+
+    .digitalbox .marketingbox { grid-area: box1; }
+    .videobox .webbox .printbox { grid-area: box2; }
+    h2 { grid-area: h2; }
 
     .vision{
         width: 100%;
@@ -536,10 +585,6 @@ footer a:link, a:visited {
     .map {
         float: right;
         width: 50%;
-    }
-
-    .chart {
-        float: end;
     }
 
 }
