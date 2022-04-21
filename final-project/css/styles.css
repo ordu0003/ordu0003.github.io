@@ -30,7 +30,6 @@ header {
     margin: auto;
     width: 600px;
     background-color: #222;
-    align-content: center;
 }
 
 .logo {
@@ -40,21 +39,12 @@ header {
 }
 
 nav {
-    width: 95%;
-    height: auto;
     text-align: center;
-    margin: auto;
 }
 
 nav li {
-    padding: 10px;
-    width: 100%;
-    margin: 0;
-}
-
-a {
+    padding: 1rem;
     margin: auto;
-    width: 100%;
 }
 
 nav li a {
@@ -76,28 +66,21 @@ a:visited {
     text-decoration: none;
 }
 
-.searchbar {
-    width: 600px;
-    margin: auto;
-    align-items: center;
+input[id=search] {
+    width: 100%;
 }
 
 button {
     border: #c78c06 solid 1px;
     background-color: #222;
-    width: 30px;
-    height: 30px;
+    width: fit-content;
+    height: fit-content;
 }
 
 button i {
     color: #c78c06;
     margin-left: 0;
-}
-
-#bar {
-    width: 100%;
-    align-self: center;
-    margin: auto;
+    padding: 0.25rem;
 }
 
 .searchbar input {
@@ -494,7 +477,7 @@ footer {
     nav {
         height: auto;
         text-align: center;
-        margin: 2rem 1rem;
+        align-content: center;
     }
 
     nav ul {
@@ -505,15 +488,10 @@ footer {
     nav li {
         font-size: 0.75rem;
     }
-
+    
     .searchbar {
-        width: 50px;
-        margin: 0;
-    }
-
-    #bar {
-        width: 80%;
-        margin: 0;
+        display: flex;
+        justify-content: space-between;
     }
 
     .wrapper {
