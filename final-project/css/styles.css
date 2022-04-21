@@ -304,9 +304,11 @@ h3 {
     display: inline-block;
 }
 
+/*Vision section with specific wrapper beacuse backgroud immage is full sized as well as the content*/
+
 .vision {
     margin: 1rem auto;
-    background-image: url("../images/vision.jpg");
+    background-image: url("../images/vision.jpg");/*img as background to allow overlaping content easily*/
     background-size: cover;
     width: 100%;
     color: #ffffff;
@@ -326,6 +328,7 @@ h3 {
     padding-left: 0;
 }
 
+/*Button3 specific for vision section*/
 .button3 {
     background-color: #2229;
     border: #c78c06 solid 1px;
@@ -337,6 +340,7 @@ h3 {
     padding-left: 0.5rem;
 }
 
+/*Team section with specific class for each member, that makes easy to make the grid in the desktop view*/
 .team {
     height: fit-content;
     padding-bottom: 1rem;
@@ -360,6 +364,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
+/*style to color line*/
 hr {
     height: 2px;
     background-color: #c78c06;
@@ -384,6 +389,7 @@ hr {
     padding-left: 1rem;
 }
 
+/*contact section with specific classes for every inner section and inside every section classes for the content*/
 .contact {
     height: fit-content;
     margin-bottom: 1rem;
@@ -395,6 +401,7 @@ hr {
     margin-left: 0;
 }
 
+/*form section*/
 .messageform h3 {
     padding-bottom: 1rem;
 }
@@ -432,6 +439,7 @@ hr {
     border: #c78c06 solid 1px;
 }
 
+/*schedule table section*/
 .chart {
     width: 100%;
     height: fit-content;
@@ -466,6 +474,7 @@ thead {
     font-size: 1rem;
 }
 
+/*map section*/
 .map {
     width: 100%;
 }
@@ -479,7 +488,6 @@ thead {
 }
 
 footer {
-    align-content: flex-end;
     background-color: #222;
     color: #c78c06;
     width: 100%;
@@ -495,14 +503,14 @@ footer {
 
     header {
         width: 100%;
-        max-width: 1200px;
+        max-width: 1200px;/*gives a maximun width of 1200px to keeop a proper size eventhough the screen is big*/
         padding: 2rem;
 
     }
 
     .topnav {
-        display: flex;
-        justify-content: space-between;
+        display: flex; /*display nheader elements in one line*/
+        justify-content: space-between; /*to justify elements*/
         max-width: 1200px;
         margin: auto;
     }
@@ -577,13 +585,13 @@ footer {
     .about {
         padding-left: 2rem;
         height: fit-content;
-        display: grid;
+        display: grid;/*Creates grid to display img and text in one line*/
         grid-template-columns: 1fr 1fr;
         padding-bottom: 1rem;
     }
 
     .about img {
-        object-fit: cover;
+        object-fit: cover;/*specify img rezising in responsive to keep dimensions but fit conatiner*/
         margin-right: 0.5rem;
     }
 
@@ -594,14 +602,14 @@ footer {
     .services {
         padding-left: 2rem;
         height: fit-content;
-        display: grid;
+        display: grid;/*Creates grid to display services boxes in diferent column sizes*/
         grid-gap: 0.5rem;
         justify-content: space-around;
         grid-template-columns: repeat(6, 1fr);
         grid-template-areas:
             "serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr"
             "digital digital digital marketing marketing marketing"
-            "video video web web print print";
+            "video video web web print print"; /*name of the grid areas are used to determine the numebr of columns for every box*/
     }
 
     .servicestittle {
@@ -614,7 +622,7 @@ footer {
     }
 
     .digitalbox {
-        grid-area: digital;
+        grid-area: digital;/*Give every grid-area a name to use on the template*/
     }
 
     .marketingbox {
@@ -637,6 +645,7 @@ footer {
         width: 100%;
     }
 
+    /*full conatiner size for the button in the desktop view*/
     .button2 {
         width: 100%;
         text-align: center;
@@ -654,7 +663,7 @@ footer {
 
     .memberbox1 {
         height: fit-content;
-        display: flex;
+        display: flex; /*Flex display to fit image and text container in one line for every memeber*/
         padding-bottom: 0;
         margin-bottom: 0;
     }
@@ -672,7 +681,7 @@ footer {
     .memberbox2 {
         height: fit-content;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; /*the display for this member is different form the first one, thats why the flex direction is different*/
         padding-bottom: 0;
     }
 
