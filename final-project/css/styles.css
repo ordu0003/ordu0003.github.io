@@ -162,7 +162,7 @@ p {
     background-color: #ffe6ac;
     margin: auto;
     box-sizing: border-box;
-    padding: 0 1rem;
+    padding: 1rem;
     height: auto;
 }
 
@@ -185,11 +185,12 @@ p {
     margin: auto;
 }
 
-.digitalbox .marketingbox .videobox .webbox .printbox {
+.digitalbox {
     width: 600px;
     margin: auto;
     align-content: center;
     height: fit-content;
+    padding-bottom: 1rem;
 }
 
 .servicestittle {
@@ -207,9 +208,8 @@ h3 {
 
 .digital {
     background-color: #ffe6ac;
-    margin: 0;
-    margin-bottom: 1rem;
-    height: 220px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .digital h3 {
@@ -217,11 +217,16 @@ h3 {
 
 }
 
-p .button2 {
+.digital-button2 {
+    height: fit-content;
+    width: 40px;
+    margin: 1rem;
+}
+
+.button2 {
     background-color: #222;
     color: #ffffff;
-    padding: 1rem;
-    height: 50px;
+    padding: 1rem;   
 }
 
 .button2 i {
@@ -231,7 +236,6 @@ p .button2 {
 .marketing {
     background-color: #ffe6ac;
     margin: 0;
-    height: 220px;
     margin-bottom: 1rem;
 }
 
@@ -242,7 +246,6 @@ p .button2 {
 .video {
     background-color: #ffe6ac;
     margin: 0;
-    height: 220px;
     margin-bottom: 1rem;
 }
 
@@ -254,7 +257,6 @@ p {
 .web {
     background-color: #ffe6ac;
     margin: 0;
-    height: 220px;
     margin-bottom: 1rem;
 }
 
@@ -265,7 +267,6 @@ p {
 .print {
     background-color: #ffe6ac;
     margin: 0;
-    height: 220px;
 }
 
 .print h3 {
@@ -457,6 +458,7 @@ footer {
         width: 100%;
         max-width: 1200px;
         padding: 2rem;
+
     }
 
     .topnav {
@@ -477,6 +479,7 @@ footer {
     nav {
         height: auto;
         text-align: center;
+        display: flex;
         align-content: center;
     }
 
@@ -492,6 +495,7 @@ footer {
     .searchbar {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .wrapper {
@@ -548,6 +552,10 @@ footer {
         height: fit-content;
     }
 
+    .marketing, .digital, .video, .web, .print {
+        height: auto;
+    }
+
     .services {
         padding-left: 2rem;
         height: fit-content;
@@ -555,26 +563,39 @@ footer {
         grid-gap: 0.5rem;
         justify-content: space-around;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
-            "box1 box1 box1 box1 box1 box1"
-            "box2 box2 box2 box2 box2 box2"
+            "serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr serv-hdr"
+            "digital digital digital marketing marketing marketing"
+            "video video web web print print";
     }
 
     .servicestittle {
         margin-left: 1rem;
+        grid-area: serv-hdr;
     }
 
     .serviceswrapper {
         height: fit-content;
     }
 
-    .digitalbox .marketingbox {
-        grid-area: box1;
+    .digitalbox {
+        grid-area: digital;
     }
 
-    .videobox .webbox .printbox {
-        grid-area: box2;
+    .marketingbox {
+        grid-area: marketing;
+    }
+
+    .videobox {
+        grid-area: video;
+    }
+    
+    .webbox {
+        grid-area: web;
+    }
+    
+    .printbox {
+        grid-area: print;
     }
 
     .vision {
@@ -631,7 +652,6 @@ footer {
         padding: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 2fr 1fr;
         grid-gap: 0.5rem;
         grid-template-areas:
             "tittle tittle"
@@ -641,7 +661,6 @@ footer {
 
     .contact .contacttittle {
         margin-left: 1rem;
-        position: absolute;
         margin-bottom: 1rem;
         grid-area: tittle;
     }
