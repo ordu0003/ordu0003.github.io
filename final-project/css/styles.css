@@ -7,6 +7,8 @@ body {
     margin: 0;
 }
 
+/*Wrapper class for a full screen view inside the section*/
+
 .wrapper {
     width: 600px;
     margin: auto;
@@ -14,30 +16,35 @@ body {
     height: fit-content;
 }
 
+/*Wrapper2 full screen size no margin*/
 .wrapper2 {
     width: 600px;
     margin: auto;
     height: auto;
 }
 
+/*Wrapper-bleed class to separate section that have margin on the sides*/
 .wrapper-bleed {
     width: 100%;
     margin: auto;
     height: fit-content;
 }
 
+/*Header contains navigation is full sized*/
 header {
     margin: auto;
     width: 600px;
     background-color: #222;
 }
 
+/*Specific class for the logo with its own style*/
 .logo {
     width: 95%;
     background-color: #c78c06;
     margin: auto;
 }
 
+/*Navigation bar with unordered list styled to fit 100% of the space in mobile screen*/
 nav {
     text-align: center;
 }
@@ -61,6 +68,7 @@ nav li a:hover {
     color: #222;
 }
 
+/*Style for links to delete bullets and font color once is visited*/
 a:link,
 a:visited {
     text-decoration: none;
@@ -69,6 +77,8 @@ a:visited {
 input[id=search] {
     width: 100%;
 }
+
+/*Search bar section to style button and input*/
 
 button {
     border: #c78c06 solid 1px;
@@ -94,6 +104,7 @@ button i {
     border: #323232 solid 1px;
 }
 
+/*Clearfix to fix float issues*/
 .clearfix::after {
     content: "";
     display: block;
@@ -200,12 +211,9 @@ h3 {
 
 .button2 {
     margin-top: 1rem;
-    width: 170px;
     background-color: #222;
     padding: 1rem;
-    align-items: center;
-    align-content: center;
-    display: flex;
+    display: inline-block;
 }
 
 .button2 a {
@@ -220,37 +228,34 @@ h3 {
 
 .digitalbox {
     width: 100%;
-    height: fit-content;
     margin-bottom: 1rem;
     align-content: center;
+    display: inline-block;
 }
 
 .digital {
     background-color: #ffe6ac;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 .marketingbox {
     width: 100%;
-    height: fit-content;
     margin-bottom: 1rem;
     align-content: center;
+    display: inline-block;
 }
 
 .marketing {
     background-color: #ffe6ac;
     margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .video {
     background-color: #ffe6ac;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .videobox {
@@ -258,34 +263,33 @@ h3 {
     height: fit-content;
     margin-bottom: 1rem;
     align-content: center;
+    display: inline-block;
 }
 
 .web {
     background-color: #ffe6ac;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .webbox {
     width: 100%;
-    height: fit-content;
     margin-bottom: 1rem;
     align-content: center;
+    display: inline-block;
 }
 
 .print {
     background-color: #ffe6ac;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .printbox {
     width: 100%;
-    height: fit-content;
     margin-bottom: 1rem;
     align-content: center;
+    display: inline-block;
 }
 
 .vision {
@@ -356,7 +360,15 @@ hr {
     padding-left: 1rem;
 }
 
+.member1 p {
+    padding-left: 1rem;
+}
+
 .member2 h3 {
+    padding-left: 1rem;
+}
+
+.member2 p {
     padding-left: 1rem;
 }
 
@@ -611,7 +623,11 @@ footer {
 
     .vision {
         width: 100%;
+    }
 
+    .button2 {
+        width: 100%;
+        text-align: center;
     }
 
     .vision-wrapper {

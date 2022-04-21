@@ -8,19 +8,19 @@
     <title>MTM6130 Final Project - Ordu0003</title>
     <!-- Icon link -->
     <script src="https://kit.fontawesome.com/a3c61ba515.js" crossorigin="anonymous"></script>
-    <!-- Embed font -->
+    <!-- Embed all font wights to use different qieghts depending on the content -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;900&display=swap"
         rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
-    <!-- Stylesheet -->
+    <!-- Stylesheet linked -->
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation bar with classes for every element and a general class to contain everything to style individually-->
+    <!-- Navigation bar with a general class and classes for every element to style individually in the flexblocks-->
     <header>
         <div class="topnav">
             <div class="logo"><img src="images/logo.png" alt="Logo"></div>
@@ -40,9 +40,11 @@
         </div>
     </header>
     <main>
-        <!-- Welcome section with banner wrapper-bleed to separte section from vision and wrapper2 to have full screen size-->
+        <!--Wrapper-bleed to separte first 3 sections from vision section that has a different bleed-->
         <div class="wrapper-bleed">
+            <!--Welcome section with Wrapper2 to have full screen size-->
             <div class="wrapper2">
+                <!-- Section for only the banner and a separated section for the black bacground and properties allows to have independent marging and layering-->
                 <section class="banner">
                     <div class="bannerbg">
                         <h1>Welcome to Three Star Media</h1> <br>
@@ -56,8 +58,9 @@
                 </section>
             </div>
 
-            <!-- About section full screen size-->
+            <!-- Wrapper2 to have full screen size-->
             <div class="wrapper2">
+                <!-- Section about contain all and section about text to adjust only the heading and paragraphs-->
                 <section class="about">
                     <img src="images/about-us.jpg" alt="About us">
                     <div class="abouttext">
@@ -73,12 +76,14 @@
             </div>
             <br>
 
-            <!--Grid of Services with bleed-->
+            <!--Grid of Services with bleed. Wrapper class to have margin on every side-->
             <div class="wrapper">
                 <section class="services">
+                    <!-- Section for the tittle only to make it part of the grid as grid area in desktop view-->
                     <div class="servicestittle">
                         <h2>Our Services</h2> <br>
                     </div>
+                    <!--Service 1: digital with a  specific class to name in the grid. Inside class of digital for only the text content-->
                     <div class="digitalbox">
                         <img src="images/digital.jpg" alt="Digital">
                         <div class="digital">
@@ -93,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--Service 1-->
+                    <!--Service 2: marketing with a  specific class to name in the grid. Inside class of marketing for only the text content-->
                     <div class="marketingbox">
                         <img src="images/marketing.jpg" alt="Marketing">
                         <div class="marketing">
@@ -108,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--Service 2-->
+                    <!--Service 3: video with a  specific class to name in the grid. Inside class of video for only the text content-->
                     <div class="videobox">
                         <img src="images/video.jpg" alt="Video">
                         <div class="video">
@@ -123,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--Service 3-->
+                    <!--Service 4: web with a  specific class to name in the grid. Inside class of web for only the text content-->
                     <div class="webbox">
                         <img src="images/web.jpg" alt="Web">
                         <div class="web">
@@ -137,25 +142,26 @@
                             <div class="button2"><a href="#">Web Plans<i class="fa-solid fa-caret-right"></i></a>
                             </div>
                         </div>
-                        <!--Service 4-->
-                        <div class="printbox">
-                            <img src="images/print.jpg" alt="Print">
-                            <div class="print">
-                                <h3>Print</h3><br>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum
-                                    corporis,
-                                    incidunt tempora fugiat assumenda quibusdam, aliquid laborum rem cumque maiores id
-                                    itaque
-                                    iusto
-                                    repellat facilis libero officia.</p>
-                                <div class="button2"><a href="#">Print Plans<i class="fa-solid fa-caret-right"></i></a>
-                                </div>
+                    </div>
+                    <!--Service 5: print with a  specific class to name in the grid. Inside class of print for only the text content-->
+                    <div class="printbox">
+                        <img src="images/print.jpg" alt="Print">
+                        <div class="print">
+                            <h3>Print</h3><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quo eius, rerum
+                                corporis,
+                                incidunt tempora fugiat assumenda quibusdam, aliquid laborum rem cumque maiores id
+                                itaque
+                                iusto
+                                repellat facilis libero officia.</p>
+                            <div class="button2"><a href="#">Print Plans<i class="fa-solid fa-caret-right"></i></a>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>
-        <!--Linked Vision banner full screen size-->
+        <!--Vision section with its own specific wrapper because the background takes full screen size. Inside another class to style only the content with different size and margin-->
         <section class="vision">
             <div class="vision-wrapper">
                 <h2>Our Vision</h2><br>
@@ -166,11 +172,14 @@
                 <br>
             </div>
         </section>
+        <!--Wrapper-bleed to separte last 2 sections from vision section that has a different bleed-->
         <div class="wrapper-bleed">
-            <!--Team intro section with bleed-->
+            <!--Team section that contains each members section-->
             <section class="team">
+                <!--Wrapper to have a size of 100% for each member separatelly-->
                 <div class="wrapper">
                     <h2>Our Team</h2>
+                    <!--Class for fox that containt all the mebers info and other class for only the text content this allows to style the img and the text separatelly-->
                     <div class="memberbox1">
                         <img src="images/john.jpg" alt="John Doe">
                         <div class="member1">
@@ -203,9 +212,10 @@
                     </div>
                 </div>
             </section>
-            <!--Contact form section with bleed-->
+            <!--Contact section section with  wrapper for dull size width-->
             <div class="wrapper">
                 <section class="contact">
+                    <!--Contact section section with specific classes for each element that allows to style them separatelly and name it in the grid-area-->
                     <div class="contacttittle">
                         <h2>Contact Us</h2>
                     </div>
@@ -234,7 +244,7 @@
                             </form>
                         </div>
                     </div>
-                    <!--Office schedule-->
+                    <!--Second class in Contact section, named on the grid to style it as full sized section-->
                     <div class="chart">
                         <h3>Hours of operation </h3>
                         <table>
@@ -256,7 +266,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <!--Office location-->
+                    <!--Map class to give it a specific name in the grid-->
                     <div class="map">
                         <h3>Location</h3>
                         <iframe
@@ -268,7 +278,7 @@
             </div>
         </div>
     </main>
-    <!--Copyright full screen size-->
+    <!--Footer full screen size with its own styling and content styling-->
     <footer>
         <div class="wrapper-bleed">
             <p>© Copyright Three Star Media, 2021</p>
